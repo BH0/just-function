@@ -1,0 +1,7 @@
+{
+	"name": "greeting", 
+	"project": "hello world", 
+	"author": "Jane Doe ", 
+	"builtin_modules": ["'http'", "'path'", "'fs'"], 
+	"code": "/* require('decamelize'); */ let c = () => { console.log('i am dummy code: ' + __dirname); }; c(); output = 'LESHGO :)'+'hi'+Number(20*20);"
+} 

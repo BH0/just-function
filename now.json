@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [{ "src": "src/server.js", "use": "@vercel/node" }],
+    "routes": [
+      {
+        "src": "/just-function/prepare",
+        "dest": "/src/server.js",
+        "methods": ["POST"]
+      },
+      {
+        "src": "/test",
+        "dest": "/src/server.js",
+        "methods": ["GET"]
+      }, 
+      {
+        "src": "/just-function/run",
+        "dest": "/src/server.js",
+        "methods": ["GET"]
+      }
+    ]
+  }
